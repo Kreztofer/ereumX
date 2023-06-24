@@ -1,0 +1,149 @@
+.hero {
+  margin-top: 110px;
+  @media screen and (min-width: 1500px) {
+    margin-top: 160px;
+  }
+}
+.hero-design {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
+}
+
+.hero-writeup {
+  width: 100%;
+  @media screen and (min-width: 1500px) {
+    width: 50%;
+  }
+}
+.discount-design {
+  height: 32px;
+  padding: 2px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  p {
+    opacity: 100%;
+    font-size: 12px;
+  }
+  span {
+    opacity: 60%;
+  }
+  @media screen and (min-width: 1024px) {
+    width: 400px;
+    p {
+      font-size: 16px;
+    }
+  }
+}
+.hero-text {
+  margin-top: 16px;
+  h1 {
+    font-size: 43px;
+    font-weight: 600;
+    @media screen and (min-width: 1024px) {
+      font-size: 52px;
+    }
+    @media screen and (min-width: 1500px) {
+      font-size: 64px;
+    }
+  }
+  p {
+    opacity: 60%;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+    line-height: 30px;
+    @media screen and (min-width: 1200px) {
+      font-size: 16px;
+    }
+    @media screen and (min-width: 1230px) {
+      width: 78%;
+    }
+  }
+}
+.wallet-width {
+  display: flex;
+  justify-content: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: flex-start;
+  }
+}
+.connect-wallet {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 14px;
+  cursor: pointer;
+  align-items: center;
+  width: 200px;
+  gap: 10px;
+  border: 2px solid var(--color-green);
+  transition: 1s;
+  padding: 15px 20px;
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color-green);
+    opacity: 10;
+  }
+  &:hover {
+    transform: scale(1.07);
+  }
+}
+
+.atm-card {
+  width: 100%;
+  img {
+    width: 97%;
+    transform: rotate(8deg);
+  }
+  @media screen and (min-width: 1200px) {
+    img {
+      transform: rotate(0deg);
+    }
+  }
+  @media screen and (min-width: 1500px) {
+    width: 535px;
+    img {
+      transform: rotate(0deg);
+    }
+  }
+}
+
+.form {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 22px;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 55px;
+  border: 2px solid var(--color-green);
+  @media screen and (min-width: 1200px) {
+    width: 610px;
+    height: auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 104px;
+  }
+}
+.line {
+  height: 2px;
+  width: 90%;
+  background-color: var(--color-green);
+}
+.spinner_hero{
+ img{
+  height: 150px;
+ }
+}

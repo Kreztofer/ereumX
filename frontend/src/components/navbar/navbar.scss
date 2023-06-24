@@ -1,0 +1,83 @@
+.logo {
+  color: var(--color-green);
+  font-size: 20px;
+  cursor: pointer;
+}
+.nav-container {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  a {
+    color: #fff;
+    &:hover {
+      color: var(--color-green);
+    }
+  }
+}
+.nav-links {
+  display: none;
+  gap: 50px;
+  p {
+    cursor: pointer;
+    &:hover {
+      color: var(--color-green);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+}
+.menu-img {
+  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+.hidden {
+  display: none;
+}
+.sidebar {
+  position: absolute;
+  top: 30px;
+  display: flex;
+  z-index: 100;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-width: 130px;
+  border-radius: 10px;
+  right: 0px;
+  p {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    li {
+      padding-top: 5px;
+      padding-bottom: 8px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+.wallet {
+  border-radius: 8px;
+  padding: 6px 16px;
+  border: 2px solid var(--color-green);
+  color: var(--color-green);
+  transition: 0.7s;
+  &:hover {
+    transform: scale(1.07);
+  }
+}

@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --color-bg: #050412;
+  --color-white: #fff;
+  --color-green: #26d0ce;
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+  --transition: all 400ms ease;
+}
+html {
+  scroll-behavior: smooth;
+}
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--color-bg);
+  color: var(--color-white);
+}
+.box-width {
+  width: 90%;
+  margin: auto;
+}
+@media screen and (min-width: 1500px) {
+  .box-width {
+    max-width: 1280px;
+    margin: auto;
+  }
+}
+.hero-gradient {
+  position: absolute;
+  z-index: 10;
+  width: 55%;
+  height: 55%;
+  left: -40%;
+}
+
+.about-gradient {
+  position: absolute;
+  z-index: 10;
+  width: 55%;
+  height: 55%;
+  left: -40%;
+  bottom: 0;
+}
+.hero-gradient_left {
+  position: absolute;
+  z-index: 0;
+  width: 10%;
+  height: 55%;
+  right: 0;
+}
+.relative {
+  position: relative;
+}
+.green_gradient {
+  border-radius: 9999px;
+  background: linear-gradient(
+    90deg,
+    #26d0cecc 0%,
+    rgba(38, 208, 206, 0.4) 100%
+  );
+  filter: blur(250px);
+}
+.blue_gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+.bg-black-gradient {
+  background: linear-gradient(
+    144.39deg,
+    #ffffff -278.56%,
+    #6d6d6d -78.47%,
+    #11101d 91.61%
+  );
+}
+.bg-discount-gradient {
+  background: linear-gradient(125.17deg, #272727 0%, #11101d 100%);
+}
+.text-gradient {
+  background: radial-gradient(
+    64.18% 64.18% at 71.16% 35.69%,
+    #ddfaf9 0.89%,
+    #bcfefd 17.23%,
+    #83f0ef 42.04%,
+    #69e8e6 55.12%,
+    #34fdfb 71.54%,
+    #01eeeb 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+input {
+  width: 90%;
+  padding: 10px 17px;
+  background: rgba(28, 208, 206, 30%);
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 36px;
+}
+button {
+  width: 90%;
+  padding: 10px 17px;
+  background: #26d0ce;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 36px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+button:hover {
+  transform: scale(1.06);
+}
+input::-webkit-input-placeholder {
+  color: #fff;
+  opacity: 60%;
+}
+input:-moz-placeholder {
+  color: #fff;
+  opacity: 60%;
+}

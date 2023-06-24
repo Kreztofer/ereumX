@@ -1,0 +1,25 @@
+.transaction-card {
+  border: 1px solid var(--color-green);
+  height: auto;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 20px;
+  a {
+    color: #fff;
+    text-decoration: underline;
+  }
+}
+.transaction-card_items {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 1.2rem;
+  }
+}

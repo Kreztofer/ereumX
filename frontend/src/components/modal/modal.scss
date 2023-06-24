@@ -1,0 +1,70 @@
+.modal {
+  position: fixed;
+  inset: 0px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
+}
+.transactions {
+  width: 90%;
+  border-radius: 20px;
+  overflow-y: auto;
+  margin: auto;
+  height: 50vh;
+  @media screen and (min-width: 1200px) {
+    width: 70%;
+    height: 80vh;
+  }
+  .cancel {
+    margin-top: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: flex-end;
+    display: flex;
+    cursor: pointer;
+    .circle {
+      font-size: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-top: 25px;
+      .circle {
+        font-size: 32px;
+      }
+    }
+  }
+}
+.modal-header {
+  display: flex;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+::-webkit-input-placeholder {
+  color: #545f7d;
+  opacity: 60%;
+}
+::-webkit-scrollbar {
+  width: 4px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+  margin-block: 0.5em;
+}
+::-webkit-scrollbar-thumb {
+  background: #aaaaaa;
+  border-radius: 100vw;
+}
