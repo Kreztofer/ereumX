@@ -6,5 +6,7 @@ The frontend of this application was written with React and vanilla javascript a
 
  feel free to enjoy this modern and responsive application.
 
+ visit website https://ereumx.netlify.app/
+
 ![](frontend/src/images/gitimg.png)
 
