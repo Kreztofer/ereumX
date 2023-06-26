@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { BiChevronLeft, BiChevronRight } from 'react-icons/bi';
 
 const CoursesPagination = ({
   itemsPerPage,
@@ -15,17 +14,17 @@ const CoursesPagination = ({
     pages.push(i);
   }
 
-  const handlePrevious = () => {
-    setCurrentPage(currentPage === 1 ? 1 : currentPage - 1);
-    setActive(true);
-    setPageNum(pageNum === 1 ? 1 : pageNum - 1);
-  };
+  // const handlePrevious = () => {
+  //   setCurrentPage(currentPage === 1 ? 1 : currentPage - 1);
+  //   setActive(true);
+  //   setPageNum(pageNum === 1 ? 1 : pageNum - 1);
+  // };
 
-  const handleNext = () => {
-    setCurrentPage(currentPage === npages ? npages : currentPage + 1);
-    setPageNum(pageNum === npages ? npages : pageNum + 1);
-    setActive(true);
-  };
+  // const handleNext = () => {
+  //   setCurrentPage(currentPage === npages ? npages : currentPage + 1);
+  //   setPageNum(pageNum === npages ? npages : pageNum + 1);
+  //   setActive(true);
+  // };
 
   const handlePageChange = (e, num) => {
     setActive(true);
@@ -41,9 +40,7 @@ const CoursesPagination = ({
   const renderPageNumbers = pages.map((number) => {
     return (
       <p
-        className={`${
-          active && pageNum === number ? 'pagination_active' : ''
-        }`}
+        className={`${active && pageNum === number ? 'pagination_active' : ''}`}
         onClick={(e) => handlePageChange(e, number)}
         key={number}
         id={number}

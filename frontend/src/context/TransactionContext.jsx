@@ -155,6 +155,7 @@ export const TransactionProvider = ({ children }) => {
   useEffect(() => {
     checkIfWalletIsConnected();
     checkIfTransactionsExists();
+    // eslint-disable-next-line
   }, []);
 
   return (
